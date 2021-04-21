@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+		{# Favicons #}
+
+		{# CSS #}
+		<link rel="stylesheet" href="{{ asset('/css/styles.css')}}">
+		{% block additional_css %}{% endblock %}
+	</head>
+	<body>
+		{# Header #}
+		<header></header>
+
+		{# Main #}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+
+		{# Footer #}
+		<footer></footer>
+
+		{# JavaScript #}
+		<script src="{{ asset('/js/script.js') }}"></script>
+		{% block additional_js %}{% endblock %}
+	</body>
+</html>
